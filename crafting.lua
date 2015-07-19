@@ -351,7 +351,7 @@ minetest.register_craft({
 	type = "shapeless",
 	recipe = {"default:torch", "default:glass"},
 })
-
+--[[
 minetest.register_craft({
 	output = "moreblocks:trap_glow_glass",
 	type = "shapeless",
@@ -363,7 +363,7 @@ minetest.register_craft({
 	type = "shapeless",
 	recipe = {"default:mese_crystal_fragment", "moreblocks:glow_glass"},
 })
-
+--]]
 minetest.register_craft({
 	output = "moreblocks:super_glow_glass",
 	type = "shapeless",
@@ -376,7 +376,7 @@ minetest.register_craft({
 	recipe = {"default:torch", "moreblocks:glow_glass"},
 })
 
-
+--[[
 minetest.register_craft({
 	output = "moreblocks:trap_super_glow_glass",
 	type = "shapeless",
@@ -388,7 +388,7 @@ minetest.register_craft({
 	type = "shapeless",
 	recipe = {"default:mese_crystal_fragment", "moreblocks:super_glow_glass"},
 })
-
+--]]
 minetest.register_craft({
 	output = "moreblocks:coal_stone",
 	type = "shapeless",
@@ -412,7 +412,7 @@ minetest.register_craft({
 	type = "shapeless",
 	recipe = {"default:coal_lump", "moreblocks:iron_stone"},
 })
-
+--[[
 minetest.register_craft({
 	output = "moreblocks:trap_stone",
 	type = "shapeless",
@@ -448,7 +448,7 @@ minetest.register_craft({
 	type = "shapeless",
 	recipe = {"default:mese_crystal_fragment", "default:sandstone"},
 })
-
+--]]
 minetest.register_craft({
 	output = "moreblocks:cactus_brick",
 	type = "shapeless",
@@ -509,10 +509,11 @@ minetest.register_craft({
 		{"moreblocks:cobble_compressed"},
 	}
 })
-
+--[[
 minetest.register_craft({
 	type = "cooking", output = "moreblocks:tar", recipe = "default:pine_tree",
 })
+--]]
 
 minetest.register_craft({
 	type = "shapeless",
