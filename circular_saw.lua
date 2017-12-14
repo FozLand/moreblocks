@@ -172,10 +172,6 @@ function circular_saw:update_inventory(pos, amount)
 		node_name.. " " .. math.floor(amount / 8)
 	})
 
-	-- The stairnodes made of default nodes use moreblocks namespace, other mods keep own:
-	if modname == "default" then
-		modname = "moreblocks"
-	end
 	-- print("circular_saw set to " .. modname .. " : "
 	--	.. material .. " with " .. (amount) .. " microblocks.")
 
