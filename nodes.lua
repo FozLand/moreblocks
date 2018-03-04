@@ -459,6 +459,12 @@ for name, def in pairs(nodes) do
 	def.tiles = def.tiles or {"moreblocks_" ..name.. ".png"}
 	minetest.register_node("moreblocks:" ..name, def)
 	minetest.register_alias(name, "moreblocks:" ..name)
+
+	-- Use the primary tile for all sides of cut glasslike nodes
+	if #def.tiles > 1 and def.drawtype and def.drawtype:find("glass") then
+		def.tiles = {def.tiles[1]}
+	end
+
 	if not def.no_stairs then
 		local groups = {}
 		for k, v in pairs(def.groups) do groups[k] = v end
